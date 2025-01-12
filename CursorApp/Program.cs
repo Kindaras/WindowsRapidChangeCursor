@@ -15,49 +15,49 @@ else
 void SetCustomCursor(CursorParts parts)
 {
     // NormalSelect
-    var c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.NormalSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    var c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.NormalSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_NORMAL);
     // TextSelect
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.TextSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.TextSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_IBEAM);
     // BusySelect
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.BusySelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.BusySelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_WAIT);
     // PrecisionSelect
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.PrecisionSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.PrecisionSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_CROSS);
     // AlternateSelect
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.AlternateSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.AlternateSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_UP);
     // DiagonalResize1
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.DiagonalResize1), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.DiagonalResize1), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZENWSE);
     // DiagonalResize2
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.DiagonalResize2), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.DiagonalResize2), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZENESW);
     // HorizontalResize
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.HorizontalResize), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.HorizontalResize), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZEWE);
     // VerticalResize
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.VerticalResize), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.VerticalResize), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZENS);
     // Move
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.Move), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.Move), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZEALL);
     // Unavailable
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.Unavailable), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.Unavailable), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_NO);
     // LinkSelect
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.LinkSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.LinkSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_HAND);
     // WorkingInBackground
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.WorkingInBackground), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.WorkingInBackground), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_APPSTARTING);
     // AppStarting
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.AppStarting), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.AppStarting), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_APPSTARTING);
     // HelpSelect
-    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.HelpSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.HelpSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_HELP);
 }
 
