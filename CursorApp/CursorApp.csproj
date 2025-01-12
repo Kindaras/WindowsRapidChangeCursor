@@ -46,6 +46,9 @@
 	<None Update="Cursor\Normal_Select_Example.cur">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
+	<None Update="Cursor\Precision_Select_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
 	<None Update="Cursor\Text_Example.cur">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
