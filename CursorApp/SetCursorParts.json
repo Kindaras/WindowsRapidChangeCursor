@@ -11,5 +11,7 @@
   "Move": "Move_Example.ani",
   "Unavailable": "Unavailable_Example.ani",
   "LinkSelect": "Link_Select_Example.cur",
-  "WorkingInBackground": "Working_Background_Example.ani"
+  "WorkingInBackground": "Working_Background_Example.ani",
+  "AppStarting": "App_Starting_Example.ani",
+  "HelpSelect": "Help_Select_Example.cur"
 }

@@ -53,6 +53,12 @@ void SetCustomCursor(CursorParts parts)
     // WorkingInBackground
     c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.WorkingInBackground), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_APPSTARTING);
+    // AppStarting
+    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.AppStarting), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_APPSTARTING);
+    // HelpSelect
+    c = PInvoke.LoadImage(null, Path.Combine(Directory.GetCurrentDirectory(), "Cursor", parts.HelpSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_HELP);
 }
 
 void SetDefaultCursor()
@@ -119,4 +125,6 @@ public class CursorParts
     public string Unavailable { get; set; } = string.Empty;
     public string LinkSelect { get; set; } = string.Empty;
     public string WorkingInBackground { get; set; } = string.Empty;
+    public string AppStarting { get; set; } = string.Empty;
+    public string HelpSelect { get; set; } = string.Empty;
 }

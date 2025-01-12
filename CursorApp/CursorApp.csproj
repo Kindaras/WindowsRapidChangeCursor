@@ -19,6 +19,9 @@
 	<None Update="Cursor\Alternate_Select_Example.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
+	<None Update="Cursor\App_Starting_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
 	<None Update="Cursor\Busy_Example.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
@@ -26,6 +29,9 @@
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
 	<None Update="Cursor\Diagonal_Resize_1_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursor\Help_Select_Example.cur">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
 	<None Update="Cursor\Horizontal_Resize_Example.ani">
