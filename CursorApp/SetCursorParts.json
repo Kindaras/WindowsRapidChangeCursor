@@ -1,0 +1,15 @@
+{
+  "NormalSelect": "Normal_Select_Example.cur",
+  "TextSelect": "Text_Example.cur",
+  "BusySelect": "Busy_Example.ani",
+  "PrecisionSelect": "Precision_Select_Example.ani",
+  "AlternateSelect": "Alternate_Select_Example.ani",
+  "DiagonalResize1": "Diagonal_Resize_1_Example.ani",
+  "DiagonalResize2": "Diagonal_Resize_2_Example.ani",
+  "HorizontalResize": "Horizontal_Resize_Example.ani",
+  "VerticalResize": "Vertical_Resize_Example.ani",
+  "Move": "Move_Example.ani",
+  "Unavailable": "Unavailable_Example.ani",
+  "LinkSelect": "Link_Select_Example.cur",
+  "WorkingInBackground": "Working_Background_Example.ani"
+}
