@@ -2,6 +2,16 @@
 using Windows.Win32;
 using Windows.Win32.UI.WindowsAndMessaging;
 
+args = args ?? Array.Empty<string>();
+
+if (args.Contains("AlwaysSetCustom"))
+{
+    CreateCustomCheck();
+    var parts = ReadCursorPartsFromJson();
+    SetCustomCursor(parts);
+    return;
+}
+
 if (CheckForCustom())
 {
     SetDefaultCursor();
@@ -88,6 +98,23 @@ static bool CheckForCustom()
         Console.WriteLine($"An error occurred: {ex.Message}");
     }
     return false;
+}
+
+static void CreateCustomCheck()
+{
+    const string fileName = "IsCustom";
+    if (File.Exists(fileName))
+    {
+        return;
+    }
+    try
+    {
+        using FileStream fs = File.Create(fileName);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An error occurred: {ex.Message}");
+    }
 }
 
 static CursorParts ReadCursorPartsFromJson()
