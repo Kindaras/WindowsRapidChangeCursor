@@ -1,3 +1,3 @@
 # WindowsRapidChangeCursor
-- Inserire i file del cursore nella cartella Cursor
-- Cambiare i nomi all'interno di SetCursorParts in corrispondenza con i file dentro Cursor
+- Put cursor's files in the Cursor folder
+- Change the SetCursorParts file to match your cursor files
