@@ -1,0 +1,17 @@
+{
+  "NormalSelect": "Hakos Baelz_01.ani",
+  "TextSelect": "Hakos Baelz_06.ani",
+  "BusySelect": "Hakos Baelz_04.ani",
+  "PrecisionSelect": "Hakos Baelz_05.ani",
+  "AlternateSelect": "Hakos Baelz_09.ani",
+  "DiagonalResize1": "Hakos Baelz_11.ani",
+  "DiagonalResize2": "Hakos Baelz_15.ani",
+  "HorizontalResize": "Hakos Baelz_14.ani",
+  "VerticalResize": "Hakos Baelz_12.ani",
+  "Move": "Hakos Baelz_13.ani",
+  "Unavailable": "Hakos Baelz_08.ani",
+  "LinkSelect": "Hakos Baelz_10.ani",
+  "WorkingInBackground": "Hakos Baelz_03.ani",
+  "AppStarting": "Hakos Baelz_03.ani",
+  "HelpSelect": "Hakos Baelz_02.ani"
+}

@@ -19,52 +19,97 @@
 
 
   <ItemGroup>
-	<None Update="Cursor\Alternate_Select_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_01.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\App_Starting_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_02.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Busy_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_03.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Diagonal_Resize_2_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_04.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Diagonal_Resize_1_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_05.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Help_Select_Example.cur">
+	<None Update="Cursors\Bae\Hakos Baelz_06.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Horizontal_Resize_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_08.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Link_Select_Example.cur">
+	<None Update="Cursors\Bae\Hakos Baelz_09.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Move_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_10.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Normal_Select_Example.cur">
+	<None Update="Cursors\Bae\Hakos Baelz_11.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Precision_Select_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_12.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Text_Example.cur">
+	<None Update="Cursors\Bae\Hakos Baelz_13.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Unavailable_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_14.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Vertical_Resize_Example.ani">
+	<None Update="Cursors\Bae\Hakos Baelz_15.ani">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="Cursor\Working_Background_Example.ani">
+	<None Update="Cursors\Bae\SetCursorParts.json">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
-	<None Update="SetCursorParts.json">
+	<None Update="Cursors\Miku\Alternate_Select_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\App_Starting_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Busy_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Diagonal_Resize_2_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Diagonal_Resize_1_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Help_Select_Example.cur">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Horizontal_Resize_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Link_Select_Example.cur">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Move_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Normal_Select_Example.cur">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Precision_Select_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Text_Example.cur">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Unavailable_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Vertical_Resize_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\Working_Background_Example.ani">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Cursors\Miku\SetCursorParts.json">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
   </ItemGroup>

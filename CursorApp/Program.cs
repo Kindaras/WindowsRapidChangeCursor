@@ -4,6 +4,8 @@ using Windows.Win32.UI.WindowsAndMessaging;
 
 args = args ?? Array.Empty<string>();
 
+string CursorPath = SelectRandomCursor();
+
 if (args.Contains("AlwaysSetCustom"))
 {
     CreateCustomCheck();
@@ -25,49 +27,49 @@ else
 void SetCustomCursor(CursorParts parts)
 {
     // NormalSelect
-    var c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.NormalSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    var c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.NormalSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_NORMAL);
     // TextSelect
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.TextSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.TextSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_IBEAM);
     // BusySelect
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.BusySelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.BusySelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_WAIT);
     // PrecisionSelect
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.PrecisionSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.PrecisionSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_CROSS);
     // AlternateSelect
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.AlternateSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.AlternateSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_UP);
     // DiagonalResize1
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.DiagonalResize1), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.DiagonalResize1), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZENWSE);
     // DiagonalResize2
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.DiagonalResize2), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.DiagonalResize2), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZENESW);
     // HorizontalResize
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.HorizontalResize), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.HorizontalResize), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZEWE);
     // VerticalResize
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.VerticalResize), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.VerticalResize), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZENS);
     // Move
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.Move), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.Move), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_SIZEALL);
     // Unavailable
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.Unavailable), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.Unavailable), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_NO);
     // LinkSelect
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.LinkSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.LinkSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_HAND);
     // WorkingInBackground
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.WorkingInBackground), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.WorkingInBackground), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_APPSTARTING);
     // AppStarting
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.AppStarting), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.AppStarting), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_APPSTARTING);
     // HelpSelect
-    c = PInvoke.LoadImage(null, Path.Combine("Cursor", parts.HelpSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
+    c = PInvoke.LoadImage(null, Path.Combine(CursorPath, parts.HelpSelect), GDI_IMAGE_TYPE.IMAGE_CURSOR, 0, 0, IMAGE_FLAGS.LR_LOADFROMFILE);
     PInvoke.SetSystemCursor(c, SYSTEM_CURSOR_ID.OCR_HELP);
 }
 
@@ -117,9 +119,9 @@ static void CreateCustomCheck()
     }
 }
 
-static CursorParts ReadCursorPartsFromJson()
+CursorParts ReadCursorPartsFromJson()
 {
-    var filename = "SetCursorParts.json";
+    var filename = Path.Combine(CursorPath, "SetCursorParts.json");
     try
     {
         // Read the JSON string from the file
@@ -135,6 +137,29 @@ static CursorParts ReadCursorPartsFromJson()
         Console.WriteLine($"An error occurred while reading JSON: {ex.Message}");
         throw;
     }
+}
+
+string SelectRandomCursor()
+{
+    string _return = string.Empty;
+    if (!Directory.Exists("Cursors"))
+    {
+        return string.Empty;
+    }
+
+    var dirs = Directory.GetDirectories("Cursors");
+    if (dirs.Length == 0)
+    {
+        return string.Empty;
+    }
+
+    Random random = new Random();
+    while (string.IsNullOrEmpty(_return) || !Directory.Exists(_return))
+    {
+        int i = random.Next(0, dirs.Length);
+        _return = dirs[i];
+    }
+    return _return;
 }
 
 public class CursorParts
