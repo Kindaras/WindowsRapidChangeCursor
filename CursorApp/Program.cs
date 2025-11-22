@@ -2,6 +2,17 @@
 using Windows.Win32;
 using Windows.Win32.UI.WindowsAndMessaging;
 
+#if !DEBUG
+string appPath = AppDomain.CurrentDomain.BaseDirectory;
+string logFile = Path.Combine(appPath, "cursorChange.log");
+FileStream fileStream = new FileStream(logFile, FileMode.Append, FileAccess.Write);
+StreamWriter logWriter = new StreamWriter(fileStream)
+{
+    AutoFlush = true
+};
+Console.SetOut(logWriter);
+#endif
+
 args = args ?? Array.Empty<string>();
 
 string CursorPath = SelectRandomCursor();
