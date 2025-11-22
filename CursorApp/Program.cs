@@ -4,7 +4,7 @@ using Windows.Win32.UI.WindowsAndMessaging;
 
 #if !DEBUG
 string appPath = AppDomain.CurrentDomain.BaseDirectory;
-string logFile = Path.Combine(appPath, "cursorChange.log");
+string logFile = Path.Combine(appPath, "log.log");
 FileStream fileStream = new FileStream(logFile, FileMode.Append, FileAccess.Write);
 StreamWriter logWriter = new StreamWriter(fileStream)
 {
