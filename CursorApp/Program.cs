@@ -2,15 +2,41 @@
 using Windows.Win32;
 using Windows.Win32.UI.WindowsAndMessaging;
 
-#if !DEBUG
-string appPath = AppDomain.CurrentDomain.BaseDirectory;
-string logFile = Path.Combine(appPath, "log.log");
-FileStream fileStream = new FileStream(logFile, FileMode.Append, FileAccess.Write);
-StreamWriter logWriter = new StreamWriter(fileStream)
+TextWriter _originalOut = Console.Out;
+StreamWriter? _fileWriter = null;
+FileStream? _fileStream = null;
+
+void ChangeConsoleOutput(bool file)
 {
-    AutoFlush = true
-};
-Console.SetOut(logWriter);
+    if (file)
+    {
+        if (_fileWriter != null)
+            return;
+
+        string appPath = AppDomain.CurrentDomain.BaseDirectory;
+        string logFile = Path.Combine(appPath, "log.log");
+        _fileStream = new FileStream(logFile, FileMode.Append, FileAccess.Write);
+        _fileWriter = new StreamWriter(_fileStream)
+        {
+            AutoFlush = true
+        };
+        Console.SetOut(_fileWriter);
+    }
+    else
+    {
+        Console.SetOut(_originalOut);
+
+        _fileWriter?.Flush();
+        _fileWriter?.Dispose();
+        _fileWriter = null;
+
+        _fileStream?.Dispose();
+        _fileStream = null;
+    }
+}
+
+#if !DEBUG
+ChangeConsoleOutput(true);
 #endif
 
 args = args ?? Array.Empty<string>();
@@ -19,6 +45,36 @@ string CursorPath = SelectRandomCursor();
 
 if (args.Contains("AlwaysSetCustom"))
 {
+    CreateCustomCheck();
+    var parts = ReadCursorPartsFromJson();
+    SetCustomCursor(parts);
+    return;
+}
+
+if (args.Contains("SelectCursor"))
+{
+    ChangeConsoleOutput(false);
+    Console.WriteLine("Available Cursors:");
+    var dirs = Directory.GetDirectories("Cursors");
+    foreach (var dir in dirs)
+    {
+        Console.WriteLine(Path.GetFileName(dir));
+    }
+    Console.WriteLine("Enter the name of the cursor you want to use:");
+    var cursorName = Console.ReadLine();
+    ChangeConsoleOutput(true);
+    if (!string.IsNullOrEmpty(cursorName))
+    {
+        var selectedPath = Path.Combine("Cursors", cursorName);
+        if (Directory.Exists(selectedPath))
+        {
+            CursorPath = selectedPath;
+        }
+        else
+        {
+            Console.WriteLine("Invalid cursor name. Using a random cursor.");
+        }
+    }
     CreateCustomCheck();
     var parts = ReadCursorPartsFromJson();
     SetCustomCursor(parts);
